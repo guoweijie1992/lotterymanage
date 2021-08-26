@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="io.renren.modules.lottery.dao.LotteryPrizeDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="io.renren.modules.lottery.entity.LotteryPrizeEntity" id="lotteryPrizeMap">
+        <result property="id" column="id"/>
+        <result property="prizeName" column="prize_name"/>
+        <result property="prizePrice" column="prize_price"/>
+        <result property="imgUrl" column="img_url"/>
+        <result property="status" column="status"/>
+        <result property="description" column="description"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="createTime" column="create_time"/>
+        <result property="ifDelete" column="if_delete"/>
+    </resultMap>
+
+
+</mapper>
